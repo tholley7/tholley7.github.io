@@ -2,7 +2,7 @@
 
 body {
 	font-family: Roboto;
-	color: #4ECDC4 ;
+	color: #4ecdc4;
 	background-color: #1d1d1d;
 
 	margin-left: 150px;
@@ -10,7 +10,8 @@ body {
 	letter-spacing: 1px;
 }
 
-header, footer {
+header,
+footer {
 	margin-top: 50px;
 	margin-bottom: 50px;
 	text-align: center;
@@ -22,7 +23,9 @@ main {
 	color: #f3f3f3;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
 	text-align: center;
 	line-height: 0px;
 	letter-spacing: 2px;
