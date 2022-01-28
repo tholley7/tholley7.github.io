@@ -76,6 +76,7 @@ figcaption {
 	font-style: italic;
 }
 
+/* NAVIGATION */
 nav {
 	font-size: 20px;
 	margin-top: 40px;
@@ -85,3 +86,28 @@ nav {
 .footer-nav {
 	margin-bottom: 20px;
 }
+
+
+/* FORMS */
+form {
+	padding-top: 40px;
+	line-height: 1.5;
+}
+
+input {
+	color: #1d1d1d;
+}
+
+#dob-comment {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.form-required::after {
+	content: " *";
+	color: #1eecc0;
+}
+
+fieldset {
+	margin-bottom: 40px;
+}
+

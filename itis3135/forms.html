@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title>Tyler Holley | ITIS3135 | Forms</title>
+</head>
+
+<body>
+	<header>
+		<h1>Tyler Holley &#11049; ITIS3135 &#11049; The Teal Hound</h1>
+		<nav>
+			<a href="index.html">Home</a> 
+			|
+			<a href="introduction.html">Introduction</a> 
+			|
+			<a href="contract.html">Contract</a>
+            |
+            <a href="forms.html">Forms</a>
+		</nav>
+	</header>
+	
+	<main>
+		<h2>Signup</h2>
+        <p>
+            Please complete the following form to request access to The Teal Hound. You will receive an encrypted link to our password generator upon approval.
+		</p>
+        <form>
+            <label for="fname" class="form-required">First Name</label><br>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname" class="form-required">Last Name</label><br>
+            <input type="text" id="lname" name="lname" required><br><br><br>
+
+            <fieldset>
+                <legend><strong>&nbsp; Contact Information &nbsp;</strong></legend>
+                <label for="email" class="form-required">Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="email" class="form-required">Confirm Email</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="phone" class="form-required">Phone Number</label><br>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="123-456-7890" required>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>&nbsp; Demographics &nbsp;</strong></legend>
+                <label for="sex" class="form-required">Sex</label><br>
+                <select id="sex" name="sex" value="Choose Sex" required>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select><br><br>
+
+                <label for="dob" class="form-required">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+                <small id="dob-comment">Verified in-person</small>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>&nbsp; Meta &nbsp;</strong></legend>
+                <label for="interest">Artists of Interest to You</label><br>
+                <input type="checkbox" id="duke" name="interest">
+                <label for="duke">Duke Silver</label><br>
+                <input type="checkbox" id="jack" name="interest">
+                <label for="jack">Saxophone Jack</label><br><br>
+
+                <label for="res">Need a regular table?</label><br>
+                <input type="radio" id="res" name="res" value="Yes">
+                <label for="res">Yes</label><br>
+                <input type="radio" id="nores" name="res" value="No" checked>
+                <label for="nores">No</label><br><br>
+
+                <label for="referral" class="form-required">Referring Member</label><br>
+                <input type="text" id="referral" name="referral" required>
+            </fieldset>
+
+            <input type="reset" value="Clear Responses" style="background-color: #ca6f6f;">
+            <button onsubmit="alert('Submitted Successfully!')" style="background-color: #5bc57b;">Apply for Membership</button>
+        </form>
+	</main>
+	
+	<footer>
+		<br/>
+		<nav class = "footer-nav">
+		    <a href="http://webpages.uncc.edu/tholley7/" target="_blank">Charlotte.edu</a> |
+		    <a href="https://github.com/tholley7" target="_blank">Github</a> |
+		    <a href="https://tholley7.github.io/" target="_blank">Github.io</a> |
+		    <a href="https://tholley7.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> |
+		    <a href="https://www.codecademy.com/tholley7/" target="_blank">Codecademy</a> |
+		    <a href="https://www.freecodecamp.org/tholley7/" target="_blank">freeCodeCamp</a> |
+		    <a href="https://www.linkedin.com/in/holleytyler/" target="_blank">LinkedIn</a>
+		</nav>
+		<br />
+		Designed by <a href = "thdesigns.co/">THDesigns</a>
+
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+			</a>
+		</p>
+	
+	</footer>
+
+</body>
+
+</html>
