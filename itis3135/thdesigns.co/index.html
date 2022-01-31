@@ -2,57 +2,159 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<link href="../styles/default.css" rel="stylesheet" type="text/css" >
 	<title>Tyler Holley | ITIS3135 | THDesigns</title>
+	<style>
+		body {
+			font-family: Roboto, SANS-SERIF;
+			color: #4ecdc4;
+			background-color: #1d1d1d;
+			letter-spacing: 1px;
+			display: flex;
+            flex-direction: column;
+		}
+		header {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		footer {
+			margin-top: 50px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		h1 {
+			text-align: center;
+			letter-spacing: 2px;
+			font-size: 40px;
+		}
+		main {
+			margin-top: -40px;
+			margin-left: auto;
+			margin-right: auto;
+			width: 50%;
+			color: #f2f2f2;
+			display: flex;
+            justify-content:space-around;
+		}
+		h1 {
+			margin-top: 100px;
+			text-align: center;
+			letter-spacing: 3px;
+			font-size: 40px;
+		}
+		h2 {
+			font-size: 24px;
+			margin-bottom: 64px;
+			margin-top: -20px;
+			text-align: center;
+			color: #37a099;
+		}
+		h3 {
+			font-size: 24px;
+			letter-spacing: 2px;
+		}
+		li {
+			line-height: 2;
+			padding-bottom: 2px;
+			letter-spacing: 2px;
+		}
+		a {
+			text-decoration: none;
+			color: #20b2aa;
+			font-weight: bold;
+		}
+		a:hover {
+			text-decoration: none;
+			color: #5bc5c0;
+		}
+		footer a {
+			color: #686868;
+			font-weight: normal;
+		}
+		footer a:hover {
+			color: #838383;
+		}
+		img {
+			margin-top: 64px;
+			width: 200px;
+			margin-bottom: -80px;
+		}
+		fieldset {
+			padding: 20px;
+			margin-top: 10px;
+			border-radius: 7px;
+		}
+		input {
+			margin-top: 6px;
+			border-style: none;
+			border-radius: 4px;
+			padding: 4px;
+			background-color: #e2e2e2;
+		}
+		textarea {
+			margin-top: 6px;
+			font-family: Roboto;
+			width: 400px;
+			height: 200px;
+			padding: 6px;
+			border-radius: 5px;
+		}
+		input {
+			
+		}
+		button {
+			background-color: #4ecdc4; 
+			border-style: none; 
+			padding: 4px 8px 4px 8px; 
+			border-radius: 5px;
+		}
+	</style>
 </head>
 
 <body>
 	<header>
-		<h1>Tyler Holley &#11049; ITIS3135 &#11049; The Teal Hound</h1>
-		<nav>
-			<a href="../">Home</a> 
-			|
-			<a href="../introduction.html">Introduction</a> 
-			|
-			<a href="../contract.html">Contract</a>
-            |
-            <a href="../forms.html">Forms</a>
-		</nav>
+		<img src="images/logo.png">
+		<h1>TH Designs</h1>
+		<h2>Your search for a designer stops here.</h2>
 	</header>
 	
 	<main>
-		<h2>404 Error</h2>
-		<p style="text-align:center">
-			This page is missing or under construction.
-		</p>
+		<div id="left">
+			<h3>Services Offered</h3>
+			<ul>
+				<li>Web Design</li>
+				<li>UI/UX Design</li>
+				<li>General Design Consulting</li>
+			</ul>
+		</div>
+		<div id="right">
+			<h3>Contact</h3>
+			<form action=”#”>
+				<fieldset>
+					<label for="name">Full Name</label><br>
+					<input type="text" id="name" name="name" placeholder="John Appleseed" required><br><br>
+
+					<label for="email">Email</label><br>
+					<input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+
+					<label for="msg">Message</label><br>
+					<textarea placeholder=" Type message here..."></textarea><br><br>
+
+					<button>Send</button>
+				</fieldset>
+			</form>
+		</div>
 	</main>
 	
-	<footer>
-		<br/>
-		<nav class = "footer-nav">
-		    <a href="http://webpages.uncc.edu/tholley7/" target="_blank">Charlotte.edu</a> |
-		    <a href="https://github.com/tholley7" target="_blank">Github</a> |
-		    <a href="https://tholley7.github.io/" target="_blank">Github.io</a> |
-		    <a href="https://tholley7.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> |
-		    <a href="https://www.codecademy.com/tholley7/" target="_blank">Codecademy</a> |
-		    <a href="https://www.freecodecamp.org/tholley7/" target="_blank">freeCodeCamp</a> |
-		    <a href="https://www.linkedin.com/in/holleytyler/" target="_blank">LinkedIn</a>
-		</nav>
-		<br />
-		Designed by <a href = "brand.htm">THDesigns</a>
-
+	<footer style="color: #686868;">
+		<p>&copy;2022 THDesigns</p>
 		<p>
-			<a href="https://validator.w3.org/check?uri=referer">
-				<img src="../images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
-			</a>
-
-			<a href="https://jigsaw.w3.org/css-validator/check/referer">
-				<img src="../images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
-			</a>
+			<a href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+			| 
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
 		</p>
 	
 	</footer>
-
 </body>
 
 </html>
