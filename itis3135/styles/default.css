@@ -38,6 +38,14 @@ h2 {
 	font-size: 32px;
 }
 
+h3 {
+	margin-top: 48px;
+	margin-bottom: 32px;
+	text-align: center;
+	letter-spacing: 2px;
+	font-size: 28px;
+}
+
 li {
 	font-size: 18px;
 	padding-top: 4px;
@@ -130,3 +138,29 @@ fieldset {
 	margin-bottom: 40px;
 }
 
+
+/* TABLE */
+table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	font-size: 18px;
+}
+
+td {
+	border: 1px solid #e2e2e2;
+	text-align: left;
+	padding: 10px;
+}
+
+th {
+	border: 1px solid #e2e2e2;
+	text-align: left;
+	padding: 8px;
+	background-color: #3b3b3b;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #2b2b2b;
+}
