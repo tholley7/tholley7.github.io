@@ -16,16 +16,21 @@
 			|
 			<a href="contract.html">Contract</a>
             |
-            <a href="forms.html">Forms</a>
+            <a href="form.html">Form</a>
+            |
+            <a href="table.html">Table</a>
 		</nav>
 	</header>
 	
 	<main>
-		<h2>Signup</h2>
-        <p>
-            Please complete the following form to request access to The Teal Hound. You will receive an encrypted link to our password generator upon approval.
+		<h2>Request Membership</h2>
+        <p style="text-align: center;">
+            Please complete the following form to request membership to <em>The Teal Hound</em>.
 		</p>
-        <form>
+        <p style="text-align: center; margin-top: -10px;">
+            You will receive an encrypted link to our password generator if approved.
+        </p>
+        <form action=”#”>
             <label for="fname" class="form-required">First Name</label><br>
             <input type="text" id="fname" name="fname" required><br><br>
 
@@ -41,13 +46,14 @@
                 <input type="email" id="email" name="email" required><br><br>
 
                 <label for="phone" class="form-required">Phone Number</label><br>
-                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" value="123-456-7890" required>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
             </fieldset>
 
             <fieldset>
                 <legend><strong>&nbsp; Demographics &nbsp;</strong></legend>
                 <label for="sex" class="form-required">Sex</label><br>
-                <select id="sex" name="sex" value="Choose Sex" required>
+                <select id="sex" name="sex" placeholder="Choose Sex" required>
+                    <option value="" selected disabled>Select one</option>
                     <option>Male</option>
                     <option>Female</option>
                 </select><br><br>
@@ -72,11 +78,12 @@
                 <label for="nores">No</label><br><br>
 
                 <label for="referral" class="form-required">Referring Member</label><br>
-                <input type="text" id="referral" name="referral" required>
+                <input type="text" id="referral" name="referral" placeholder=" John Appleseed" required>
             </fieldset>
-
-            <input type="reset" value="Clear Responses" style="background-color: #ca6f6f;">
-            <button onsubmit="alert('Submitted Successfully!')" style="background-color: #5bc57b;">Apply for Membership</button>
+            <div class="form-buttons">
+                <input type="reset" value="Clear Responses" style="background-color: #9e4f4f; color:#ebebeb; padding: 5px;">
+                <button style="background-color: #28723e; color:#ebebeb; padding: 5px; margin-left: 10px;">Apply for Membership</button>
+            </div> 
         </form>
 	</main>
 	
@@ -91,7 +98,7 @@
 		    <a href="https://www.freecodecamp.org/tholley7/" target="_blank">freeCodeCamp</a> |
 		    <a href="https://www.linkedin.com/in/holleytyler/" target="_blank">LinkedIn</a>
 		</nav>
-		<br />
+		<br/>
 		Designed by <a href = "thdesigns.co/">THDesigns</a>
 
 		<p>

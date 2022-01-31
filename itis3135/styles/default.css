@@ -26,7 +26,6 @@ main {
 h1 {
 	margin-top: 100px;
 	text-align: center;
-	line-height: 0px;
 	letter-spacing: 2px;
 	font-size: 40px;
 }
@@ -35,7 +34,6 @@ h2 {
 	margin-top: 64px;
 	margin-bottom: 64px;
 	text-align: center;
-	line-height: 0px;
 	letter-spacing: 2px;
 	font-size: 32px;
 }
@@ -52,8 +50,11 @@ li {
 
 p {
 	line-height: 1.5;
+	font-size: 18px;
 }
 
+
+/* LINKS */
 a {
 	text-decoration: none;
 	color: #20b2aa;
@@ -65,16 +66,22 @@ a:hover {
 	color: #5bc5c0;
 }
 
+
+/* FIGURE */
 figure {
+	margin-left: auto;
+	margin-right: auto;
 	text-align: center;
 	padding-bottom: 50px;
 	padding-top: 25px;
+	width: 75%;
 }
 
 figcaption {
 	margin-top: 10px;
 	font-style: italic;
 }
+
 
 /* NAVIGATION */
 nav {
@@ -87,15 +94,27 @@ nav {
 	margin-bottom: 20px;
 }
 
+footer a {
+	color: #80d3cf;
+}
 
-/* FORMS */
+footer a:hover {
+	color: #20b2aa;
+}
+
+
+/* FORM */
 form {
 	padding-top: 40px;
 	line-height: 1.5;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 input {
 	color: #1d1d1d;
+	background-color: #e2e2e2;
 }
 
 #dob-comment {
@@ -104,7 +123,7 @@ input {
 
 .form-required::after {
 	content: " *";
-	color: #1eecc0;
+	color: #1ac29d;
 }
 
 fieldset {
