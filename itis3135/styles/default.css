@@ -46,9 +46,15 @@ h3 {
 	font-size: 28px;
 }
 
+ul {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 li {
 	font-size: 18px;
-	padding-top: 4px;
+	padding-bottom: 12px;
 	line-height: 1.5;
 }
 
