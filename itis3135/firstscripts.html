@@ -3,7 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
-	<title>Tyler Holley | ITIS3135 | Home</title>
+    <script src = "scripts/defaultscripts.js"></script>
+	<title>Tyler Holley | ITIS3135 | First Scripts</title>
 </head>
 
 <body>
@@ -29,10 +30,20 @@
 	</header>
 	
 	<main>
-		<h2>Home</h2>
-		<p>
-			Welcome to my ITIS3135 Project Page! Please use the navigation bar above to navigate to another page. This page contains no other content.
-		</p>
+		<h2>First Scripts</h2>
+        <h3>
+            <button type="button" onclick="scriptTest()">Try this script!</button>
+        </h3>
+        <h3><span id="datetime"></span></h3>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleString();
+        </script>
+        <p>What's your name?  <input type="text" id="name"> <br>
+            How are you doing today?  <input type="text" name="emotion" id="emotion"> <br>
+            <button onclick="hello();" type="button" name="name" id="button1">Submit</button>
+        </p>
+        <p id="hello"></p>
 	</main>
 	
 	<footer>
