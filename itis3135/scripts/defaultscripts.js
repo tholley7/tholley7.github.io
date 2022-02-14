@@ -10,7 +10,7 @@ function hello() {
 }
 
 function calcTax() {
-  var paid = prompt("Enter how much you paid");
+  var paid = prompt("Pre-tax total:");
   paid = parseFloat(paid);
   var total = (paid * 1.07);
   total = parseFloat(total);
@@ -18,9 +18,9 @@ function calcTax() {
 }
 
 function calcMPG() {
-  var miles = prompt("Enter how many miles you drove.");
+  var miles = prompt("Miles driven:");
   miles = parseFloat(miles);
-  var gallons = prompt("Enter how many gallons you use.");
+  var gallons = prompt("Gallons used:");
   gallons = parseFloat(gallons);
   var mpg = miles / gallons;
   mpg = parseInt(mpg);
@@ -37,6 +37,15 @@ function sum(max) {
   alert("The sum of the two random numbers is: " + sum);
 }
 
+function MilestoKilo() {
+  var mile = prompt("Enter how many miles.");
+  mile = parseFloat(mile);
+  var kilo = (mile*1.609344);
+  kilo = parseFloat(kilo);
+  let newmile = kilo.toFixed(2);
+  alert("The distance in kilometers is: " + newmile);
+}
+
 function FahrenheittoCelsius() {
   var temp = prompt("Enter the temperature in Fahrenheit.");
   temp = parseFloat(temp);
@@ -46,11 +55,3 @@ function FahrenheittoCelsius() {
   alert("The temperature in Celsius is: " + newtemp);
 }
 
-function MilestoKilo() {
-  var mile = prompt("Enter how many miles.");
-  mile = parseFloat(mile);
-  var kilo = (mile*1.609344);
-  kilo = parseFloat(kilo);
-  let newmile = kilo.toFixed(2);
-  alert("The distance in kilometers is: " + newmile);
-}
