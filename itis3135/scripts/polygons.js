@@ -1,7 +1,6 @@
 var sides;
 var entered;
 var polygon;
-var rerun;
 
 function getSides() {
   sides = prompt("Welcome to The Teal Hound. To get tonight's entrance password, enter a number 1-10:");
@@ -23,8 +22,7 @@ function validateEntry() {
 }
 
 function getentered() {
-  rerun = 1;
-  while (rerun == 1) {
+  
     getSides();
     var entered = Math.round(Math.abs(sides));
     validateEntry();
@@ -69,6 +67,7 @@ function getentered() {
       alert("That is a " + polygon);
       break;
     }
-  }
 
 }
+
+getentered()
