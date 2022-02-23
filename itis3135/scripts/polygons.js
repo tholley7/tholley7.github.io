@@ -22,7 +22,6 @@ function validateEntry() {
 }
 
 function getEntered() {
-  
     getSides();
     var entered = Math.round(Math.abs(sides));
     validateEntry();
@@ -64,10 +63,10 @@ function getEntered() {
         polygon = "decagon";
       }
 
-      alert("That is a " + polygon);
+      alert("The password is " + polygon);
       break;
     }
 
 }
 
-getentered()
+getEntered()
