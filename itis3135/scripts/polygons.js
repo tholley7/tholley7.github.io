@@ -21,7 +21,7 @@ function validateEntry() {
   }
 }
 
-function getentered() {
+function getEntered() {
   
     getSides();
     var entered = Math.round(Math.abs(sides));
