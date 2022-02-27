@@ -32,11 +32,11 @@
 	
 	<main>
 		<h2>Form Example: Request Membership</h2>
-        <p style="text-align: center;">
+        <p class="centered-pgh">
             Please complete the following form to request membership to <em>The Teal Hound</em>.
 		</p>
-        <p style="text-align: center; margin-top: -10px;">
-            You will receive an encrypted link to our password generator if approved.
+        <p class="centered-pgh">
+            You will receive an encrypted link to our password generator upon approval.
         </p>
         <form action=”#”>
             <label for="fname" class="form-required">First Name</label><br>
@@ -89,8 +89,8 @@
                 <input type="text" id="referral" name="referral" placeholder=" John Appleseed" required>
             </fieldset>
             <div class="form-buttons">
-                <input type="reset" value="Clear Responses" style="background-color: #9e4f4f; color:#ebebeb; padding: 5px;">
-                <button style="background-color: #28723e; color:#ebebeb; padding: 5px; margin-left: 10px;">Apply for Membership</button>
+                <input type="reset" value="Clear Responses" id="reset-application">
+                <button id="submit-application">Apply for Membership</button>
             </div> 
         </form>
 	</main>
