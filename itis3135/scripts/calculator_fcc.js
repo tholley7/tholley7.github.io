@@ -1,39 +1,67 @@
-let calculator = document.querySelector('.calculator-fcc');
-let keys = calculator.querySelector('.calc-fcc-buttons');
-let screen = calculator.querySelector('.calc-fcc-screen');
-let equals = calculator.querySelector('.equals');
-let operator = calculator.querySelector('.operator');
-
-
-keys.addEventListener('click', e => {
-    //if the target is a button
-    if (e.target.matches('button')) {
-        //if the button does not have a data-action attribute, then it is a number
-        let key = e.target;
-        let action = key.dataset.action;
-        let keyContent = key.textContent;
-        let displayedNum = screen.textContent;
-        if (!action) {
-            if (displayedNum === '0') {
-                screen.textContent = keyContent;
-            } else {
-                screen.textContent = displayedNum + keyContent;
-            }
-        }
-        //if data-action is clear, then clear the screen
-        if (action === 'clear') screen.textContent = '0';
-        //if data-action is delete, only delete the last character
-        if (action === 'delete') screen.textContent = displayedNum.slice(0, -1);
-        //if decimal is clicked, only add it if it is not already there
-        if (action === 'decimal') {
-            if (!displayedNum.includes('.')) screen.textContent = displayedNum + '.';
-        }
-       if(action === 'evaluate') {
-            //evaluate everything on the screen
-            let result = eval(displayedNum);
-            screen.textContent = result;
-       }
-
-    }
-
-});
+const calculate = (n1, operator, n2) => {
+	let result = ''
+	if (operator === 'add') {
+	  result = parseFloat(n1) + parseFloat(n2)
+	} else if (operator === 'subtract') {
+	  result = parseFloat(n1) - parseFloat(n2)
+	} else if (operator === 'multiply') {
+	  result = parseFloat(n1) * parseFloat(n2)
+	} else if (operator === 'divide') {
+	  result = parseFloat(n1) / parseFloat(n2)
+	}
+  
+	return result
+  }
+  
+  const calculator = document.querySelector('.calculator')
+  const display = calculator.querySelector('.calculator__display')
+  const keys = calculator.querySelector('.calculator__keys')
+  
+  keys.addEventListener('click', e => {
+	if (e.target.matches('button')) {
+	  const key = e.target
+	  const action = key.dataset.action
+	  const keyContent = key.textContent
+	  const displayedNum = display.textContent
+	  const previousKeyType = calculator.dataset.previousKeyType
+  
+	  Array.from(key.parentNode.children)
+		.forEach(k => k.classList.remove('is-depressed'))
+  
+	  if (!action) {
+		if (displayedNum === '0' || previousKeyType === 'operator') {
+		  display.textContent = keyContent
+		} else {
+		  display.textContent = displayedNum + keyContent
+		}
+	  }
+  
+	  if (action === 'decimal') {
+		display.textContent = displayedNum + '.'
+	  }
+  
+	  if (
+		action === 'add' ||
+		action === 'subtract' ||
+		action === 'multiply' ||
+		action === 'divide'
+	  ) {
+		key.classList.add('is-depressed')
+		calculator.dataset.previousKeyType = 'operator'
+		calculator.dataset.firstValue = displayedNum
+		calculator.dataset.operator = action
+	  }
+  
+	  if (action === 'clear') {
+		console.log('clear key!')
+	  }
+  
+	  if (action === 'calculate') {
+		const firstValue = calculator.dataset.firstValue
+		const operator = calculator.dataset.operator
+		const secondValue = displayedNum
+  
+		display.textContent = calculate(firstValue, operator, secondValue)
+	  }
+	}
+  })
