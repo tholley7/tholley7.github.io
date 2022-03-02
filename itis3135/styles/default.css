@@ -200,3 +200,41 @@ th {
 tr:nth-child(even) {
 	background-color: #2b2b2b;
 }
+
+/* FCC Calculator */
+.calculator-fcc {
+	background-color: #225c74;
+	color: #fde5cc;
+	padding: 10px;
+	border-radius: 10px;
+	/*center to middle*/
+	margin: 20px auto;
+	width: 30%;
+}
+.calc-fcc-screen {
+	width: 100%;
+	height: 50px;
+	border-radius: 10px;
+	background-color: #eedcc7;
+	color: #0b455c;
+	text-align: right;
+	font-size: 3em;
+}
+.calc-fcc-buttons {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin-top: 10px;
+	grid-gap: 2px;
+}
+.calc-fcc-buttons button {
+	background-color: #0b455c;
+	color: #fde5cc;
+	border-radius: 10px;
+	padding: 10px;
+	border: #2e0606;
+}
+.calc-fcc-buttons button:hover {
+	background-color: #2e0606;
+	color: #ffcc99;
+	transition: 0.5s;
+}
