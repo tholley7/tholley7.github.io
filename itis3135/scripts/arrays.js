@@ -15,8 +15,8 @@ let $ = function(id) {
 }
 
 function addSalary() {
-    let employeeToAdd = $('employee-name').value;
-    let salaryToAdd = $('salary').value;
+    let employeeToAdd = $("employee-name").value;
+    let salaryToAdd = $("salary").value;
 
     salaryToAdd = parseFloat(salaryToAdd);
     if (peopleArray.includes(employeeToAdd)) {
@@ -27,8 +27,8 @@ function addSalary() {
     peopleArray.push(employeeToAdd);
     salaryArray.push(salaryToAdd);
 
-    $('salary').innerHTML = "";
-    $('employee-name').focus();
+    $("salary").innerHTML = "";
+    $("employee-name").focus();
 }
 
 function displayResults() {
@@ -38,7 +38,7 @@ function displayResults() {
 
     /* Find average */
     for(let i = 0; i < salaryArray.length; i++) {
-        let temp = parseFloat(salaryArray[i]).toFixed(2);
+        let temp = parseInt(salaryArray[i]).toFixed(2);
         sum += temp;
     }
 
@@ -60,6 +60,7 @@ function displaySalary() {
     let table = "";
 
     table += "<thead> <tr> <th>Employee Name</th> <th>Employee Salary</th> </tr> </thead> <tbody>";
+
     for (let i = 0; i < salaryArray.length; i++) {
         table + "<tr><td>" + peopleArray[i] + "</tr><td>" + salaryArray[i] + " </td></tr>";
     }
