@@ -3,8 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
-    <script src = "scripts/polygons.js" defer></script>
-	<title>Tyler Holley | ITIS3135 | Polygons</title>
+    <script src = "scripts/arrays.js" defer></script>
+	<title>Tyler Holley | ITIS3135 | Arrays</title>
 </head>
 
 <body>
@@ -36,10 +36,35 @@
 	</header>
 	
 	<main>
-		<h2>Polygons</h2>
-        <h4 style="text-align: center">
-			Follow the instructions in the dialogue box to get your password.
-        </h4>
+		<h2>Arrays</h2>
+		<form action="#">
+            <fieldset id="salary-input-form">
+                <legend><strong>&nbsp; Salary Entry &nbsp;</strong></legend>
+                <label class="arrays-label" for="employee-name">Employee Name</label>
+                <select id="employee-name">
+                    <option value="Caroline Miller">Caroline Miller</option>
+                    <option value="Geoffery Blake">Geoffery Blake</option>
+                    <option value="Maddison Blake">Maddison Blake</option>
+                    <option value="Karla Vasquez-Aguilar">Karla Vasquez-Aguilar</option>
+                    <option value="David Wallace">David Wallace</option>
+                    <option value="Jeffrey Holley">Jeffrey Holley</option>
+                    <option value="Josh Brinkman">Josh Brinkman</option>
+                    <option value="Grace Coyne">Grace Coyne</option>
+                </select>
+                <label class="arrays-label" id="second-label" for="salary">Employee Salary</label>
+                <input type="number" id="salary" placeholder="Enter employee salary" required>
+            </fieldset>
+
+            <div class="arrays-controls">
+                <button class="arrays-button" id="add-salary" onclick="addSalary();">Add Salary</button>
+                <button class="arrays-button" id="display-results" onclick="displayResults();">Display Results</button>
+                <button class="arrays-button" id="display-salary" onclick="displaySalary();">Display Salary</button>
+            </div>
+        </form>
+
+        <div id="result"></div>
+
+        <table id="arrays-table"></table>
 	</main>
 	
 	<footer>
@@ -67,7 +92,7 @@
 		</p>
 	
 	</footer>
-
+    
 </body>
 
 </html>
