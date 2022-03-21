@@ -37,3 +37,15 @@ p {
     color: yellowgreen;
     text-decoration: underline;
 }
+#crappy-list {
+    text-align: center;
+}
+#crappy-h1 {
+    margin-left: 23%;
+}
+#crappy-h3 {
+    border-width: 20px;
+}
+#crappy-h2 {
+    color: maroon;
+}
