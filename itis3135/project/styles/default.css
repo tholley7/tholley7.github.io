@@ -90,6 +90,8 @@ footer a {
 
     padding-top: 15vh;
     padding-bottom: 15vh;
+
+    margin-top: 80px;
 }
 .hero-text {
     padding-left: 15vw;
@@ -104,6 +106,7 @@ footer a {
     color: #E77EB0;
 }
 #hero-button {
+    margin-top: 40px;
     border-style: none;
     padding: 18px 25px 15px 25px;
     border-radius: 50px;
@@ -134,7 +137,7 @@ footer a {
 }
 #flavor-text {
     margin-top: -100px;
-    margin-bottom: 5vh;
+    margin-bottom: 4vh;
 }
 
 /* Testimonials */
