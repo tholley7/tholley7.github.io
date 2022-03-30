@@ -233,11 +233,15 @@ footer a {
     width: 50%;
 }
 
-.flex-items img {
+#headshot {
     max-width: 40vw;
     width: 800px;
     max-width: 100%;
+    border-radius: ;
 }
 #bio {
     margin-right: 5vw;
+}
+.bio-pgh {
+    margin-bottom: 32px;
 }
