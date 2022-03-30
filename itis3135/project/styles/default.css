@@ -14,12 +14,13 @@ body {
     background-color: #fefefe;
     overflow: hidden;
     width: 100%;
-    padding-top: 2vh;
+    padding-top: 20px;
     padding-bottom: 1.5vh;
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     padding-left: 3vw;
+    height: 50px;
 }
 #navbar > a {
     float: left;
@@ -56,15 +57,15 @@ body {
     background-image: linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25)), url("https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
     
     height: 50%;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 
-    padding-top: 15vh;
+    padding-top: 20vh;
     padding-bottom: 15vh;
 }
 .hero-text {
-    padding-left: 100px;
+    padding-left: 15vw;
 }
 .hero-text h1 {
     line-height: 1.2;
@@ -84,4 +85,5 @@ body {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: .4px;
+    linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25))
 }
