@@ -1,5 +1,11 @@
+/* Main Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Brand Fonts */
+/* KoHo */
 @import url('https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,700;1,600&display=swap');
+/* Dancing Script */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
 
 body {
@@ -86,5 +92,5 @@ body {
     font-weight: 700;
     font-size: 16px;
     letter-spacing: .4px;
-    linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25))
+    linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25));
 }
