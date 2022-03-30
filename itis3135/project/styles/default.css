@@ -22,7 +22,7 @@ body {
     padding-right: 10vw;
     padding-bottom: 150px;
     padding-left: 10vw;
-    margin-top: 100px;
+    margin-top: 105px;
 }
 h1 {
     font-size: 40px;
@@ -35,10 +35,10 @@ footer {
 	padding-bottom: 50px;
 	text-align: center;
     background-color: #1d1d1d;
-    color: #fefefe;
+    color: #a7a7a7;
 }
 footer a {
-    color: #fefefe;
+    color: #b4b4b4;
     font-weight: bold;
     text-decoration: none;
 }
@@ -49,13 +49,14 @@ footer a {
     overflow: hidden;
     padding-top: 20px;
     position: fixed;
-    padding-bottom: 1.5vh;
     display: inline-block;
     vertical-align: top;
     font-size: 16px;
     padding-left: 5vw;
-    height: 80px;
+    height: 85px;
     box-shadow: 0 2px 2px -1px rgba(0,0,0,.2);
+    
+    /* Make navbar stay at top */
     position: fixed;
     top: 0;
     width: 100%;
@@ -64,7 +65,7 @@ footer a {
     float: left;
     color: #1d1d1d;
     text-align: center;
-    padding: 14px;
+    padding: 12px 10px 10px 10px;
     text-decoration: none;
 }
 #navbar a.active {
@@ -91,7 +92,7 @@ footer a {
     padding-top: 15vh;
     padding-bottom: 15vh;
 
-    margin-top: 80px;
+    margin-top: 85px;
 }
 .hero-text {
     padding-left: 15vw;
