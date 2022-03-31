@@ -197,7 +197,7 @@ footer a {
     margin-top: 20px;
 }
 .program-title {
-    color:rgba(250, 81, 131, 1);
+    color:#fa5183;
 
 }
 .program-subtitle {
@@ -273,4 +273,43 @@ footer a {
 .centered-heading {
     text-align: center;
     margin-bottom: 5vh;
+}
+
+
+/* CONTACT PAGE */
+#coming-soon {
+    text-align: center; 
+    color: #fa5183; 
+    font-weight: 700;
+}
+input[type=text], input[type=email], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+.form-container {
+    margin-top: 2vh;
+    border-radius: 10px;
+    background-color: #e7e7e7;
+    padding: 20px;
+}
+#message {
+    height: 200px;
+    font-family: "Roboto";
 }
