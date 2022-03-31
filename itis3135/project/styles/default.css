@@ -68,6 +68,9 @@ footer a {
     padding: 12px 10px 10px 10px;
     text-decoration: none;
 }
+#navbar > a:hover {
+    font-weight: 700;
+}
 #navbar a.active {
     color: #FA5183;
     font-weight: bold;
