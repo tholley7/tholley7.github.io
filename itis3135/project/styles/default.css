@@ -178,9 +178,7 @@ footer a {
     grid-column-gap: 2vw;
     grid-row-gap: 5vh;
 }
-.description {
-    padding-top: 10px;
-}
+
 #title1 { grid-area: 1 / 1 / 2 / 2; }
 #description1 { grid-area: 1 / 2 / 2 / 3; }
 #title2 { grid-area: 2 / 1 / 3 / 2; }
@@ -188,7 +186,9 @@ footer a {
 #title3 { grid-area: 3 / 1 / 4 / 2; }
 #description3 { grid-area: 3 / 2 / 4 / 3; }
 
-
+.description p {
+    padding-top: 10px;
+}
 .description li {
     line-height: 2;
 }
@@ -261,5 +261,5 @@ footer a {
     margin-right: 5vw;
 }
 .bio-pgh {
-    margin-bottom: 32px;
+    margin-bottom: 24px;
 }
