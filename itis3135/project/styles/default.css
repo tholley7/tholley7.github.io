@@ -117,6 +117,11 @@ footer a {
     font-size: 16px;
     letter-spacing: .4px;
     background: linear-gradient(45deg, rgba(250, 81, 131, 1), rgba(255, 130, 190, 1));
+    cursor: pointer;
+}
+#hero-button:hover {
+    background: #fefefe;
+    color:#fa5183;
 }
 
 /* Attention Grabber */
@@ -203,6 +208,11 @@ footer a {
     background-color: #fefefe;
     padding: 15px 30px 15px 30px;
     margin-top: 24px;
+    cursor: pointer;
+}
+.program-button:hover {
+    background: #1d1d1d;
+    color: #fefefe;
 }
 
 /* About Page */
