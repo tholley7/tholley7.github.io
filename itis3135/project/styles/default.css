@@ -25,10 +25,10 @@ body {
     margin-top: 105px;
 }
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 footer {
     padding-top: 50px;
@@ -85,9 +85,9 @@ footer a {
 
 /* HOME PAGE */
 .hero-image {
-    background-image: linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25)), url("https://images.unsplash.com/photo-1607962837359-5e7e89f86776?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-image: linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25)), url("../images/hero.jpg");
     
-    height: 50%;
+    height: 25%;
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -102,7 +102,7 @@ footer a {
 }
 .hero-text h2 {
     line-height: 1.2;
-    font-size: 48px;
+    font-size: 3rem;
     font-family: "KoHo", sans-serif;
     color: #fefefe
 }
@@ -117,7 +117,7 @@ footer a {
     background-color: #E77EB0;
     color: #fefefe;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     letter-spacing: .4px;
     background: linear-gradient(45deg, rgba(250, 81, 131, 1), rgba(255, 130, 190, 1));
     cursor: pointer;
@@ -151,7 +151,7 @@ footer a {
 
 /* Testimonials */
 .testimonials {
-    padding-top: 100px;
+    padding-top: 10vh;
 }
 .testimonials h1 {
     text-align: center;
@@ -159,14 +159,17 @@ footer a {
     margin-bottom: -10px;
 }
 .testimonials h3 {
-    padding-top: 20px;
+    padding-top: 4vh;
     margin-bottom: -15px;
-    padding-bottom: 10px;
+    padding-bottom: 2.5vh;
 }
 .testimonials h3, p {
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
+}
+.testimonials p {
+    margin-bottom: 1vh;
 }
 
 
@@ -202,13 +205,13 @@ footer a {
 }
 .program-subtitle {
     font-weight: normal;
-    font-size: 20px;
+    font-size: 1.25px;
 }
 .program-button {
     border-style: solid;
     border-color: #1d1d1d;
     border-radius: 50px;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #fefefe;
     padding: 15px 30px 15px 30px;
     margin-top: 24px;
@@ -243,6 +246,7 @@ footer a {
     align-self: auto;
     order: 0;
     width: 50%;
+    padding-left: 20vh;
 }
 .flex-items:nth-child(2) {
     display: block;
@@ -252,13 +256,12 @@ footer a {
     align-self: auto;
     order: 0;
     width: 50%;
+    padding-left: 10vh;
 }
 
 /* Page Content */
 #headshot {
-    max-width: 40vw;
-    width: 800px;
-    max-width: 100%;
+    max-height: 60vh;
     border-radius: 10px;
 }
 #bio {
@@ -267,12 +270,29 @@ footer a {
 .bio-pgh {
     margin-bottom: 24px;
 }
-.trainer-name {
-    margin-bottom: 16px;
+.trainer-certification {
+    font-size: 1rem;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #4d4d4d;
+}
+.trainer-title {
+    margin-bottom: 5vh;
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 2rem;
 }
 .centered-heading {
     text-align: center;
     margin-bottom: 5vh;
+}
+#about-quote {
+    color:#fa5183;
+    font-weight: 700;
 }
 
 
@@ -308,6 +328,9 @@ input[type=submit]:hover {
     border-radius: 10px;
     background-color: #e7e7e7;
     padding: 20px;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 #message {
     height: 200px;

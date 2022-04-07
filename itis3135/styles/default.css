@@ -49,6 +49,9 @@ h3 {
 	letter-spacing: 2px;
 	font-size: 28px;
 }
+.evaluation-source {
+	text-decoration: underline;
+}
 
 ul {
 	width: 60%;
