@@ -110,6 +110,7 @@ footer a {
     color: #E77EB0;
 }
 #hero-button {
+    font-family: "Roboto", Helvetica, sans-serif;
     margin-top: 40px;
     border-style: none;
     padding: 18px 25px 15px 25px;
@@ -205,9 +206,10 @@ footer a {
 }
 .program-subtitle {
     font-weight: normal;
-    font-size: 1.25px;
+    font-size: 1.25rem;
 }
 .program-button {
+    font-family: "Roboto", Helvetica, sans-serif;
     border-style: solid;
     border-color: #1d1d1d;
     border-radius: 50px;
