@@ -85,7 +85,7 @@ footer a {
 
 /* HOME PAGE */
 .hero-image {
-    background-image: linear-gradient(45deg, rgba(22, 22, 22, 0.6) 50%, rgba(197, 226, 81, .25)), url("../images/hero.jpg");
+    background-image: linear-gradient(45deg, rgba(22, 22, 22, 0.7) 50%, rgba(197, 226, 81, .25)), url("../images/hero.jpg");
     
     height: 25%;
     background-position: top;
@@ -107,7 +107,7 @@ footer a {
     color: #fefefe
 }
 .hero-text strong {
-    color: #E77EB0;
+    color: #ff8ac3;
 }
 #hero-button {
     font-family: "Roboto", Helvetica, sans-serif;
