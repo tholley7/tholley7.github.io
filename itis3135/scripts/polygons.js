@@ -27,7 +27,7 @@ function getEntered() {
     validateEntry();
     while (sides <= 10) {
       if (entered == 1) {
-        polygon = "hexagon";
+        polygon = "henagon";
       } 
       else if (entered == 2) {
         polygon = "digon";
@@ -63,7 +63,7 @@ function getEntered() {
         polygon = "decagon";
       }
 
-      alert("The password is " + polygon);
+      alert("The password is " + polygon + ".");
       break;
     }
 
