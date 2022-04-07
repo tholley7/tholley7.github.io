@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <title>TJHolley Photography</title>
+	<meta charset="UTF-8">
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700&display=swap');
+
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Catamaran", sans-serif;
+            background-color: #2C2F33;
+            line-height: 1.5;
+            letter-spacing: 1px;
+            color: #f6f6f6;
+        }
+        .hidden-tab {
+            display: none;
+        }
+        .active-tab {
+            display: block;
+            height: 79vh;
+            padding-top: 5vh;
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }
+        
+        h1 {
+            font-size: 2.25rem;
+            text-align: center;
+            margin-top: 90px;
+            padding-top: 5vh;
+            color: #858ffc;
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 4vh;
+        }
+        figure {
+            margin-top: 5vh;
+            text-align: center;
+        }
+        #home-img {
+            height: 40vh;
+            border-radius: 8px;
+        }
+        p {
+            margin-bottom: 1.5rem;
+            width: 50vw;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 1rem;
+        }
+        .centered-pgh {
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            height: 20vh;
+            padding-top: 6vh;
+            text-align: center;
+            background-color: #23272A;
+            color: #F6F6F6;
+            font-size: 1rem;
+        }
+        #validation {
+            margin-bottom: 1rem;
+        }
+        footer p {
+            color: #99AAB5;
+        }
+        footer a {
+            color: #99AAB5;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        footer a:hover {
+            color: #dcdfe4;
+        }
+        
+        
+        /* Navbar */
+        #navbar {
+            background-color: #23272A;
+            overflow: hidden;
+            padding-top: 20px;
+            position: fixed;
+            display: inline-block;
+            vertical-align: top;
+            font-size: 1rem;
+            padding-left: 5vw;
+            height: 85px;
+            box-shadow: 0 2px 2px -1px #00000033;
+            
+            /* Make navbar stay at top */
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        #navbar > a {
+            float: left;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 12px 10px 10px 10px;
+            text-decoration: none;
+        }
+        #navbar > a:hover {
+            color: #99AAB5;
+            cursor: pointer;
+        }
+
+
+        /* Flex Container */
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: normal;
+            align-items: center;
+            align-content: normal;
+            margin-top: 2vh;
+        }
+        .flex-items:nth-child(1) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 50vw;
+            padding-right: 1vw;
+            padding-left: 10vw;
+            background-color: blue;
+        }
+        .flex-items:nth-child(2) {
+            display: block;
+            flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: auto;
+            align-self: auto;
+            order: 0;
+            width: 50vw;
+            margin-left: 1vw;
+        }
+
+        /* Section Content Grid */
+        .section-content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: 20vh 30vh;
+            grid-column-gap: 1vw;
+            grid-row-gap: 0px;
+        }
+        .div1 { grid-area: 1 / 1 / 2 / 5; }
+        .div2 { grid-area: 2 / 2 / 3 / 3; }
+        .div3 { grid-area: 2 / 3 / 3 / 4; }
+        
+        .grid-img { height: 30vh; border-radius: 4px;}
+        .grid-fig { height: 10vh; margin-top: 2vh;}
+
+        /* Slideshow */
+        .slideshow-container {
+            text-align: center;
+            max-height: 30vh;
+            margin: auto;
+        }
+        .mySlides {
+            display: none;
+        }
+        #first-slide {
+            display: block;
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            margin-top: -22px;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .text {
+            color: #f6f6f6;
+            font-size: 15px;
+            padding: 8px 12px;
+            position: absolute;
+            bottom: 8px;
+            width: 100%;
+            text-align: center;
+        }
+        .numbertext {
+            color: #f6f6f6;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .dot {
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+        @keyframes fade {
+            from {opacity: .4}
+            to {opacity: 1}
+        }
+    </style>
+    <script type="text/javascript">
+        function $(x) {return document.getElementById(x);} 
+
+        // TAB CHANGER
+        function showTab(id) {
+            var element;
+            for (i = 1; i <= 5; i++) {
+                element = $(i.toString())
+                if(element.classList.contains("active-tab")) {
+                    element.classList.remove("active-tab");
+                    element.classList.add("hidden-tab");
+                }
+            }
+            element = $(id);
+            element.classList.remove("hidden-tab");
+            element.classList.add("active-tab");
+        }
+
+
+        // SLIDESHOW
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="navbar">
+            <a onclick="showTab('1');">Home</a>
+            <a onclick="showTab('2');">About</a>
+            <a onclick="showTab('3');">Travel</a>
+            <a onclick="showTab('4');">Background</a>
+            <a onclick="showTab('5');">Past Trips</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="common-header">
+            <h1>TJHolley Photography</h1>
+        </div>
+        <!-- TABS -->
+        <div id="1" class="active-tab">
+            <h2>Home</h2>
+
+            <p class="centered-pgh"> 
+                Welcome to my one-page photography portfolio!
+            </p>
+            <p class="centered-pgh"> 
+                I am a student at UNC Charlotte studying computer science and Human-Computer Interaction! I have been practicing photography for many years using different mediums including film, digital, mobile, and pinhole photography!
+            </p>
+        
+            <figure>
+                <img id="home-img" src="images/key-west.jpg" alt="Key West">
+                <figcaption style="margin-top: 1vh;">A photo from my latest trip to Key West</figcaption>
+            </figure>
+        </div>
+        <div id="2" class="hidden-tab">
+            <h2>About Me</h2>
+
+            <div class="section-content">
+                <div class="div1">
+                    <p>
+                        I am originally from the Boston, MA area before moving to Charlotte, NC. Now, I am a sophomore studying Human-Computer Interaction at the University of North Carolina at Charlotte. I have been studying at this unversity for 2 years and am set to graduate in May of 2024. At UNC Charlotte, I serve as the Marketing Director for Niner Esports.
+                    </p>
+                    <p>
+                        When not working, studying, or taking photos, you can almost certainly find me playing any one of several PC games including Rainbow Six: Siege, Apex Legends, and Call of Duty: Modern Warfare!
+                    </p>
+                </div>
+                <div class="div2">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/r6.jpg" alt="Rainbow Six: Siege">
+                        <figcaption style="margin-top: 1vh;">Rainbow Six: Siege</figcaption>
+                    </figure>
+                </div>
+                <div class="div3">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/apex.jpg" alt="Apex Legends">
+                        <figcaption style="margin-top: 1vh;">Apex Legends</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="3" class="hidden-tab">
+            <h2>Travel</h2>
+
+            <div class="section-content">
+                <div class="div1">
+                    <p>
+                        Until COVID-19 changed the world's travel industry, I travelled with my family and friends all around the united states. I also travelled to Spain as part of my school's Spanish Exchange program. I loved taking pictures of the country's unique landscape, people, and architecture.
+                    </p>
+                    <p>
+                        In my domestic travels, I have visited and photographed landscapes in over 35 US States including Alaska, Southwest National Parks, and various spots on the coast from Virginia Beach to Malibu. Each new location offered a beautiful setting to capture.
+                    </p>
+                </div>
+                <div class="div2">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/key-west.jpg" alt="Key West">
+                        <figcaption style="margin-top: 1vh;">Key West</figcaption>
+                    </figure>
+                </div>
+                <div class="div3">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/santa-montica.jpg" alt="Santa Montica">
+                        <figcaption style="margin-top: 1vh;">Santa Montica</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="4" class="hidden-tab">
+            <h2>Background</h2>
+
+            <div class="section-content">
+                <div class="div1">
+                    <p>
+                        I first picked up a camera when my mom asked me to take pictures with her camera at one of my brother's baseball games when I was in middle school. Needless to say I was hooked. I started to use my mother's Nikon D3000 more and more until it eventually became more my camera than hers.
+                    </p>
+                    <p>
+                        Since then, I have been all around the country as well as abroad to Spain's beautiful Basque Country. There, I was able  to experience a whole new culture and document it along the way.
+                    </p>
+                </div>
+                <div class="div2">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/elephant.jpg" alt="Elephant Zoo">
+                        <figcaption style="margin-top: 1vh;">Open-Pasture Zoo  (Spain)</figcaption>
+                    </figure>
+                </div>
+                <div class="div3">
+                    <figure class="grid-fig">
+                        <img class="grid-img" src="images/lifeguard.jpg" alt="Lifeguard Stand">
+                        <figcaption style="margin-top: 1vh;">South Beach</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div id="5" class="hidden-tab">
+            <h2>Past Trips</h2>
+            <p class="centered-pgh">
+                Admittedly, I haven't been able to take photos in a while but I try my best. Still, I reminisce about days when I did regularly.
+            </p>
+            <p  class="centered-pgh">
+                Below, you can find a slideshow of a recent trip: a family vacation to the National Parks of the southwest!
+            </p>
+            <div class="slideshow-container">
+                <div class="mySlides" id="first-slide">
+                    <img src="images/slide1.jpg" style="height: 30vh;">
+                </div>
+              
+                <div class="mySlides">
+                    <img src="images/slide2.jpg" style="height: 30vh;">
+                </div>
+              
+                <div class="mySlides">
+                    <img src="images/slide3.jpg" style="height: 30vh;">
+                </div>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p id="validation" style="color: #494c50;">
+                <a style="color: #494c50;" href="https://validator.w3.org/check?uri=referer">Validate HTML</a>
+                | 
+                <a style="color: #494c50;" href="https://jigsaw.w3.org/css-validator/check/referer">Validate CSS</a>
+            </p>
+            <p>Designed by <a href = "../thdesigns.co">Tyler Holley</a></p>
+        </div>
+    </footer>
+
+</body>
