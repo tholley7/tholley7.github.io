@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<link href="styles/default.css" rel="stylesheet" type="text/css" >
+	<title>Tyler Holley | ITIS3135 | Peer Review 2</title>
+</head>
+
+<body>
+	<header>
+		<h1>Tyler Holley &#11049; ITIS3135 &#11049; The Teal Hound</h1>
+		<nav>
+			<a href="index.html">Home</a> 
+			|
+			<a href="introduction.html">Introduction</a> 
+			|
+			<a href="contract.html">Contract</a>
+            |
+            <a href="form.html">Form</a>
+            |
+            <a href="table.html">Table</a>
+            |
+            <a href="stuff/Fun PAgE.1.htm">Crappy Design</a>
+			|
+			<a href="website_evaluations.html">Website Evaluations</a>
+            |
+            <a href="firstscripts.html">First Scripts</a>
+			<br>
+            <br>
+			<a href="polygons.html">Polygons</a>
+            |
+            <a href="calculator_fcc.html">FCC Calculator</a>
+            |
+            <a href="arrays.html">Arrays</a>
+			|
+			<a href="hobby/">Midterm</a>
+            |
+            <a href="activity10.html">Image Swap</a>
+            |
+            <a href="accordion.html">Accordion Widget</a>
+			|
+			<a href="holley-activity12.html">Carousel</a>
+            <br>
+            <br>
+            <a href="projectoutline.html">Project Outline</a>
+			|
+			<a href="project/">Project Site</a>
+            |
+            <a href="review1.html">Peer Review 1</a>
+            |
+            <a href="review2.html">Peer Review 2</a>
+		</nav>
+	</header>
+	
+	<main>
+        <h2>Peer Review 2 - Noah Parkes's Project</h2>
+		
+        <figure>
+            <a href="https://webpages.charlotte.edu/nparkes/itis3135/CommunityMatterCafe/index.html">
+                <img src="images/peer_reviews/nparkes05-project.png" alt="mteaster project screenshot" class="centered-img">
+            </a>
+            <figcaption>Noah Parkes's Home Page</figcaption>
+        </figure>
+
+        <h3 class="review-header">
+            File Management/Naming
+        </h3>
+        <p>
+            The files have capital letters that would be more appropriate in Java code. They are snake case (e.g. "donationPage.html"); instead, they should be named something like "donations.html" or "donations_page.html" to conform with this class's naming conventions. The fonts used in the site are files rather than css imports and are named "bodyFont.woff2" and "headingFont.woff2". These should be properly named according to the actual fonts' names.
+        </p>
+        <p>
+            There are no folders in the project directory. All files (html, css, and woff2) are in the same top-level directory. There are also no images in the project directory, leading me to believe that they are located in the class site's images directory.  Each file, other than the HTML files, should be in corresponding folders according to document type. Additionally, the project's images should be in a folder within the project directory.
+        </p>
+
+        <h3 class="review-header">
+            Styles
+        </h3>
+        <p>
+            The site is made up of default styles. There CSS document (communityStyleSheet.css) in the project directory is not properly implemented in the head of each page's HTML. This should be an easy fix.
+        </p>
+
+        <h3 class="review-header">
+            Page Design
+        </h3>
+        <p>
+            <em class="review-em">The page lacks any custom design due to the failed css file import.</em>
+        </p>
+        <p>
+            The footer does have copyright that attempts to link to the design firm page but the link is broken. This is probably due to a misformatted file path.
+        </p>
+        <p>
+            One good thing is that each page has the same organizational structure. The brand title is at the top in large bold text, followed by the nav bar, a smaller heading with the page title, and finally the body text/image content.
+        </p>
+
+        <h3 class="review-header">
+            Validation
+        </h3>
+        <p>
+            <em class="review-em">There are no validation buttons or links.</em>
+        </p>
+
+        <h3 class="review-header">
+            Page Code
+        </h3>
+        <p>
+            The page code is properly indented and all ids and classes appear intentional. Each page's content is contained within a div with the same class ("content") which is the only thing inside the "main" tag. This "content" div is unnecessary as all of it's content would fit inside "main" with no issue.
+        </p>
+	</main>
+	
+	<footer>
+		<br/>
+		<nav class = "footer-nav">
+		    <a href="http://webpages.uncc.edu/tholley7/" target="_blank">Charlotte.edu</a> |
+		    <a href="https://github.com/tholley7" target="_blank">Github</a> |
+		    <a href="https://tholley7.github.io/" target="_blank">Github.io</a> |
+		    <a href="https://tholley7.github.io/itis3135/" target="_blank">ITIS 3135 Github Pages</a> |
+		    <a href="https://www.codecademy.com/tholley7/" target="_blank">Codecademy</a> |
+		    <a href="https://www.freecodecamp.org/tholley7/" target="_blank">freeCodeCamp</a> |
+		    <a href="https://www.linkedin.com/in/holleytyler/" target="_blank">LinkedIn</a>
+		</nav>
+		<br />
+		Designed by <a href = "thdesigns.co/">THDesigns</a>
+
+		<p>
+			<a href="https://validator.w3.org/check?uri=referer">
+				<img src="images/button-valid-html5.gif" width="88" height="31" alt="Link to HTML validator">
+			</a>
+
+			<a href="https://jigsaw.w3.org/css-validator/check/referer">
+				<img src="images/button-valid-css.gif" width="88" height="31" alt="Link to CSS validator">
+			</a>
+		</p>
+	
+	</footer>
+
+</body>
+
+</html>

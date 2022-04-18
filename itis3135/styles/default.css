@@ -76,6 +76,9 @@ li {
 p {
 	line-height: 1.5;
 	font-size: 18px;
+	width: 50vw;
+	margin-left: auto;
+	margin-right: auto;
 }
 .centered-pgh {
 	text-align: center;
@@ -115,7 +118,7 @@ figure {
 	text-align: center;
 	padding-bottom: 50px;
 	padding-top: 25px;
-	width: 75%;
+	width: 75vw;
 }
 
 figcaption {
@@ -413,14 +416,20 @@ tr:nth-child(even) {
 
 
 /* PEER REVIEWS */
-.left-aligned {
-	text-align: left;	
-}
-
-.peer-review-content {
-	max-width: 20%;
+.review-header {
+	text-align: left;
+	width: 50vw;
 	margin-left: auto;
 	margin-right: auto;
+	margin-bottom: 1vh;
+}
+.centered-img {
+	text-align: center;
+	width: 50vw;
+	border-radius: 4px;
+}
+.review-em {
+	color: #bbbbbb;
 }
 
 
