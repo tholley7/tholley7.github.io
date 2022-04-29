@@ -144,33 +144,11 @@ footer a {
     width: 500px;
     max-width: 100%;
     border-radius: 25px;
+    margin-bottom: 8vh;
 }
 #flavor-text {
     margin-top: -100px;
     margin-bottom: 4vh;
-}
-
-/* Testimonials */
-.testimonials {
-    padding-top: 10vh;
-}
-.testimonials h1 {
-    text-align: center;
-    color:#fa5183;
-    margin-bottom: -10px;
-}
-.testimonials h3 {
-    padding-top: 4vh;
-    margin-bottom: -15px;
-    padding-bottom: 2.5vh;
-}
-.testimonials h3, p {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1000px;
-}
-.testimonials p {
-    margin-bottom: 1vh;
 }
 
 
@@ -379,26 +357,6 @@ input[type=submit]:hover {
 
 
 /* Testimonials Slider */
-@import "compass/css3";
-
-.testimonials {
-    margin-top: 25px;
-}
-
-#flexslider-copy-wrapper {
-    margin-top: 35px;
-    background: #fefefe;
-    color: #1d1d1d;
-    width: 768px;
-    margin: 0 auto;
-}
-
-#flexslider-copy-wrapper .copy-wrapper {
-    padding: 12px;
-}
-
-#flexslider-copy-wrapper .flex-control-nav {
-    text-align: left;
-    bottom: -25px;
-    position: relative;
+.flexslider {
+    margin-top: 4vh;
 }
