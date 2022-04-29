@@ -376,3 +376,29 @@ input[type=submit]:hover {
         max-width: 100%;
     }
 }
+
+
+/* Testimonials Slider */
+@import "compass/css3";
+
+.testimonials {
+    margin-top: 25px;
+}
+
+#flexslider-copy-wrapper {
+    margin-top: 35px;
+    background: #fefefe;
+    color: #1d1d1d;
+    width: 768px;
+    margin: 0 auto;
+}
+
+#flexslider-copy-wrapper .copy-wrapper {
+    padding: 12px;
+}
+
+#flexslider-copy-wrapper .flex-control-nav {
+    text-align: left;
+    bottom: -25px;
+    position: relative;
+}
