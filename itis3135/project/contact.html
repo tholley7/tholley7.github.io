@@ -2,9 +2,16 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
+    <title>Contact - StrongFitness</title>
 	<link href="styles/default.css" rel="stylesheet" type="text/css" >
     <script src = "scripts/fixed-navbar.js" defer></script>
-	<title>Contact - StrongFitness</title>
+	
+    <!-- JQuery UI Tooltip Stuff -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+    <script defer src="scripts/tooltips.js"></script>
 </head>
 
 <body>
@@ -22,26 +29,22 @@
     <main>
         <div class="content" id="about-content">
             <h1 class="centered-heading">Contact Us</h1>
-
-            <p id="coming-soon">Operational JS Coming Soon</p>
             
             <div class="form-container">
-                <form action="action_page.php">
-              
+                <form action="#">
                     <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+                    <input required type="text" id="fname" name="firstname" placeholder="Your first name" title="Please enter your first name.">
                 
                     <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+                    <input required type="text" id="lname" name="lastname" placeholder="Your last name" title="Please enter your last name.">
 
                     <label for="email">Email</label>
-                    <input id="email" name="email" type="email" placeholder="youremail@domain.com" required>
+                    <input required id="email" name="email" type="email" placeholder="youremail@domain.com" title="Please enter your email.">
                 
                     <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+                    <textarea required id="message" name="message" placeholder="Write your message here..." title="This is the message that will appear in the email."></textarea>
                                     
-                    <input type="submit" value="Submit">
-              
+                    <input type="submit" value="Submit" onclick="">
                 </form>
               </div>
         </div>
